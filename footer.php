@@ -22,18 +22,18 @@ Global $homeurl,$TplUrl,$siteurl;
         
 </div> <!-- end CONTAINER -->
     
-	<script src="<?php echo $TplUrl; ?>/js/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-	<script src="<?php echo $TplUrl; ?>/js/plugins.js"></script>
-    <script src="<?php echo $TplUrl; ?>/js/jquery.parss.js" type="text/javascript"></script>
-    <script type="text/javascript" src="<?php echo $TplUrl; ?>/js/jquery.fancybox-1.3.4.pack.js"></script>
-    <script src="<?php echo $TplUrl; ?>/js/jquery-ui-1.8.14.custom.min.js" type="text/javascript"></script>
-	<script src="<?php echo $TplUrl; ?>/js/script.js"></script>  
+	<script defer="defer" src="<?php echo $TplUrl; ?>/js/jquery.min.js"></script>
+	<script defer="defer" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script defer="defer" src="<?php echo $TplUrl; ?>/js/plugins.js"></script>
+    <script defer="defer" src="<?php echo $TplUrl; ?>/js/jquery.parss.js" type="text/javascript"></script>
+    <script defer="defer" type="text/javascript" src="<?php echo $TplUrl; ?>/js/jquery.fancybox-1.3.4.pack.js"></script>
+    <script defer="defer" src="<?php echo $TplUrl; ?>/js/jquery-ui-1.8.14.custom.min.js" type="text/javascript"></script>
+	<script defer="defer" src="<?php echo $TplUrl; ?>/js/script.js"></script>
 	<!--[if lt IE 7 ]>
-	<script src="js/libs/dd_belatedpng.js"></script>
-	<script> DD_belatedPNG.fix('img, .png_bg');</script>
+	<script defer="defer" src="js/libs/dd_belatedpng.js"></script>
+	<script defer="defer"> DD_belatedPNG.fix('img, .png_bg');</script>
 	<![endif]-->
-	<script>
+	<script defer="defer">
 	 $(document).ready(function() {
 			$("#cookiePolicyPopup").fancybox({
 				type: 'iframe',
@@ -54,10 +54,11 @@ Global $homeurl,$TplUrl,$siteurl;
 		 });
 	</script>
 <?php wp_footer(); ?>
+<script>(function($,d){$.each(readyQ,function(i,f){$(f)});$.each(bindReadyQ,function(i,f){$(d).bind("ready",f)})})(jQuery,document)</script>
 
 
 
-<script type="text/javascript">
+<script defer="defer" type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-36110609-1']);
