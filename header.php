@@ -9,22 +9,12 @@
  * @since Twenty Eleven 1.0
  */
 ?><!DOCTYPE html>
-<!--[if IE 6]>
-<html id="ie6" <?php language_attributes(); ?>>
-<![endif]-->
-<!--[if IE 7]>
-<html id="ie7" <?php language_attributes(); ?>>
-<![endif]-->
-<!--[if IE 8]>
-<html id="ie8" <?php language_attributes(); ?>>
-<![endif]-->
-<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
 <html <?php language_attributes(); ?>>
-<!--<![endif]-->
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
-<title><?php
+<title>
+    <?php
 	Global $homeurl,$TplUrl,$siteurl;
 
 	/*
@@ -85,24 +75,17 @@ include('Utils.php');
 
         
 <div id="container">
-        
-        
-        
-        
   <header role="banner">
     <nav role="navigation">
-        
         <ul class="clearfix">
-          <li class="logo"><a href="<?php echo $siteurl;?>"><img src="<?php echo $TplUrl; ?>/img/brooks_england.gif" alt="BROOKS ENGLAND" height="47" width="159"></a></li>
+          <li class="logo"><a href="<?php echo $siteurl;?>"><img src="<?php echo $TplUrl; ?>/img/brooks_england.gif" alt="<?php get_bloginfo( 'name' ); ?>" height="47" width="159"></a></li>
           <?php OutHeaderMenu();?>
       </ul>
-      
     </nav>
     <div id="tools" class="clearfix">
         <div id="share">Свяжитесь с нами</div>
-            
             <a class="fb" href="http://www.facebook.com/BrooksEnglandRussia" target="_blank">fb</a>
-	    <a class="tw" href="http://vk.com/brooks_england_russia" target="_blank">vk</a>
+	        <a class="tw" href="http://vk.com/brooks_england_russia" target="_blank">vk</a>
             <a href="<?php echo $siteurl;?>/contacts/" class="sendm">SEND TO FRIEND</a>
             <span class="search">
             <form id="searchform" role="search" method="get" action="<?php echo $siteurl;?>">
