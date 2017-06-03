@@ -1,0 +1,105 @@
+
+@charset "UTF-8";
+.saddlelineindex {
+    background-color: #F2F2F2;
+    height: 309px;
+    margin-bottom: auto;
+    padding: 22px;
+
+    width: 666px;
+}
+.saddlelineindex h2 {
+    font: bold 16px/16px Arial,Helvetica,sans-serif;
+    letter-spacing: 0;
+    margin-bottom: 12px;
+    text-transform: none;
+}
+.saddlelineindex p {
+    font: 14px/14px Arial,Helvetica,sans-serif;
+    letter-spacing: -0.03em;
+}
+.saddlelineindex img {
+    position: absolute;
+}
+#saddleline1, #saddleline2, #saddleline3, #saddleline4, #saddleline5 {
+    left: 250px;
+    position: absolute;
+    top: 201px;
+    z-index: 4;
+}
+.saddleline {
+    background-color: #F2F2F2;
+    height: 309px;
+    padding: 22px;
+    position: relative;
+    width: 666px;
+}
+.saddleline a {
+    color: #990000;
+}
+.saddleline h2 {
+    color: #000000;
+    font: 30px/30px GoudyOldSty-Reg,Georgia,"Times New Roman",Times,serif;
+    letter-spacing: -0.03em;
+    margin-bottom: 15px;
+    text-transform: none;
+}
+.saddleline h2 .evidente {
+    color: #990000;
+}
+.saddleline h3 {
+    font: 14px/14px GoudyOldSty-Reg,Georgia,"Times New Roman",Times,serif;
+    letter-spacing: -0.03em;
+    margin-bottom: 30px;
+}
+.saddleline p {
+    font: 14px/14px Arial,Helvetica,sans-serif;
+    letter-spacing: -0.03em;
+}
+.saddleline div.pictures {
+    float: left;
+    width: 178px;
+}
+.saddleline div.pictures img.pict {
+    left: 25px;
+    position: absolute;
+    top: 170px;
+}
+.saddleline div.texts {
+    float: left;
+    width: 470px;
+}
+.saddleline div.close {
+    bottom: 16px;
+    left: 200px;
+    position: absolute;
+    width: 410px;
+}
+.saddleline div.button_back {
+    bottom: 16px;
+    left: 22px;
+    position: absolute;
+}
+.saddleline div.button_fwd {
+    bottom: 16px;
+    position: absolute;
+    right: 22px;
+}
+div#fancy_div div.saddleline div.texts h3, div#fancy_div div.saddleline div.texts p {
+    color: #333333;
+}
+
+
+.saddleline div.texts {
+height: 260px;
+position:relative;
+}
+.saddleline p {
+bottom: 0;
+position: absolute;
+}
+.logoImg
+{
+margin-left:-2px;
+}
+.hide-pop-block{display:none;height: 309px;width: 666px;}
