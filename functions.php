@@ -618,6 +618,146 @@ function footer_enqueue_scripts(){
     add_action('wp_footer','wp_print_head_scripts',5);
 }
 add_action('after_setup_theme','footer_enqueue_scripts');
+add_theme_support( 'post-thumbnails' );
 
+function create_dillers_moscow() {
+    register_post_type( 'dillers_moscow',
+        array(
+            'labels' => array(
+                'name' => 'Дилеры Москва',
+                'singular_name' => 'Диллеры',
+                'add_new' => 'Добавить нового дилера',
+                'add_new_item' => 'Добавить нового дилера'
+            ),
+            'public' => true,
+            'menu_position' => 6,
+            'supports' => array( 'title', 'thumbnail'),
+            'menu_icon' => 'dashicons-tickets-alt',
+            'has_archive' => true
+        )
+    );
+}
+
+add_action( 'init', 'create_dillers_moscow' );
+
+function create_dillers_piter() {
+    register_post_type( 'dillers_piter',
+        array(
+            'labels' => array(
+                'name' => 'Дилеры Питер',
+                'singular_name' => 'Диллеры',
+                'add_new' => 'Добавить нового дилера',
+                'add_new_item' => 'Добавить нового дилера'
+            ),
+            'public' => true,
+            'menu_position' => 7,
+            'supports' => array( 'title', 'thumbnail'),
+            'menu_icon' => 'dashicons-tickets-alt',
+            'has_archive' => true
+        )
+    );
+}
+
+add_action( 'init', 'create_dillers_piter' );
+
+function create_dillers_et() {
+    register_post_type( 'dillers_et',
+        array(
+            'labels' => array(
+                'name' => 'Дилеры Екат',
+                'singular_name' => 'Диллеры',
+                'add_new' => 'Добавить нового дилера',
+                'add_new_item' => 'Добавить нового дилера'
+            ),
+            'public' => true,
+            'menu_position' => 7,
+            'supports' => array( 'title', 'thumbnail'),
+            'menu_icon' => 'dashicons-tickets-alt',
+            'has_archive' => true
+        )
+    );
+}
+
+add_action( 'init', 'create_dillers_et' );
+
+function create_dillers_kl() {
+    register_post_type( 'dillers_kl',
+        array(
+            'labels' => array(
+                'name' => 'Дилеры Калинин',
+                'singular_name' => 'Диллеры',
+                'add_new' => 'Добавить нового дилера',
+                'add_new_item' => 'Добавить нового дилера'
+            ),
+            'public' => true,
+            'menu_position' => 7,
+            'supports' => array( 'title', 'thumbnail'),
+            'menu_icon' => 'dashicons-tickets-alt',
+            'has_archive' => true
+        )
+    );
+}
+
+add_action( 'init', 'create_dillers_kl' );
+
+function create_dillers_sr() {
+    register_post_type( 'dillers_sr',
+        array(
+            'labels' => array(
+                'name' => 'Дилеры Саратов',
+                'singular_name' => 'Диллеры',
+                'add_new' => 'Добавить нового дилера',
+                'add_new_item' => 'Добавить нового дилера'
+            ),
+            'public' => true,
+            'menu_position' => 7,
+            'supports' => array( 'title', 'thumbnail'),
+            'menu_icon' => 'dashicons-tickets-alt',
+            'has_archive' => true
+        )
+    );
+}
+
+add_action( 'init', 'create_dillers_sr' );
+
+function create_dillers_n1() {
+    register_post_type( 'dillers_n1',
+        array(
+            'labels' => array(
+                'name' => 'Дилеры #1',
+                'singular_name' => 'Диллеры',
+                'add_new' => 'Добавить нового дилера',
+                'add_new_item' => 'Добавить нового дилера'
+            ),
+            'public' => true,
+            'menu_position' => 7,
+            'supports' => array( 'title', 'thumbnail'),
+            'menu_icon' => 'dashicons-tickets-alt',
+            'has_archive' => true
+        )
+    );
+}
+
+add_action( 'init', 'create_dillers_n1' );
+
+function create_dillers_n2() {
+    register_post_type( 'dillers_n2',
+        array(
+            'labels' => array(
+                'name' => 'Дилеры #2',
+                'singular_name' => 'Диллеры',
+                'add_new' => 'Добавить нового дилера',
+                'add_new_item' => 'Добавить нового дилера'
+            ),
+            'public' => true,
+            'menu_position' => 7,
+            'supports' => array( 'title', 'thumbnail'),
+            'menu_icon' => 'dashicons-tickets-alt',
+            'has_archive' => true
+        )
+    );
+}
+
+add_action( 'init', 'create_dillers_n2' );
 
 
