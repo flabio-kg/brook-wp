@@ -9,6 +9,7 @@ $Linesimagesarray = array(
 17=>'http://brooksengland.ru/wp-content/themes/twentyeleven/img/saddlelines/Classic.gif',
 18=>'http://brooksengland.ru/wp-content/themes/twentyeleven/img/saddlelines/Imperial.gif',
 19=>'http://brooksengland.ru/wp-content/themes/twentyeleven/img/saddlelines/Aged.gif',
+32=>'http://brooksengland.ru/wp-content/themes/twentyeleven/img/saddlelines/cambium_logo.gif'
 );
 $CurentCatID;
 $photossql = "SELECT * FROM wp_postgallery WHERE postid='".$Postid."' ORDER By image_order ASC";

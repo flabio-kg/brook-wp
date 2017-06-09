@@ -13,7 +13,7 @@ $postContent = apply_filters('the_content', $post->post_content);
 
 
 $product==false;
-$LinesCatsArray = array(19,14,18,17,15,16);
+$LinesCatsArray = array(32,19,14,18,17,15,16);
 $post_categories = wp_get_post_categories($post->ID);
 $Postid = $post->ID;
 foreach ($post_categories as $pcats)
